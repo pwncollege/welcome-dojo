@@ -21,7 +21,7 @@ cat <<END
 ⠀⠀⠀⠀⠀⠀⠻⣿⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 END
 
-if stat /bin/sudo | grep Access.*755 
+if stat /bin/sudo | grep -q Access.*755 
 then
 	cat <<END
 You are not running in Practice mode! Hopefully, you have already run this
