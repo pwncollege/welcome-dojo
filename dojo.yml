@@ -1,6 +1,6 @@
 id: welcome
 
-name: Welcome Dojo
+name: The Welcome Dojo
 
 description: |
   Welcome to the Dojo!
@@ -14,7 +14,7 @@ award:
 modules:
 
   - id: welcome
-    name: Welcome
+    name: The Welcome Module
     description: Let's learn how to use the dojo!
 
     challenges:
