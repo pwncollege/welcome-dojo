@@ -62,7 +62,7 @@ modules:
           This challenge's `/challenge/solve` program will make the flag world-readable, but won't print it to you.
           You will need to read `/flag` yourself after running `/challenge/solve`.
 
-      - id: Practice
+      - id: practice
         name: Using Practice Mode
         description: |
           You can launch challenges in two modes, using the buttons below!
@@ -77,3 +77,12 @@ modules:
           - Read the `/challenge/secret` file.
           - Relaunch the challenge in normal mode (using Start).
           - Provide the secret when `/challenge/solve` asks for it.
+
+      - id: persist-1
+        name: Persistent Home Directories - One
+        description: |
+          Your home directory in the dojo is persistent between challenges.
+          This means that you can use it to build up notes across multiple challenges in a module, reference old solutions, or rerun solutions perfected in Practice mode against challenges in non-Practice mode.
+
+          This challenge, and the next, will drive home the point by having you write a file in your home directory.
+          Launch this challenge and follow its instructions!
