@@ -1,7 +1,7 @@
 #!/opt/pwn.college/bash
 
 # art from https://emojicombos.com/karate-ascii-art
-cat <<END
+cat <<END | while read LINE; do echo "$LINE"; sleep 0.1; done
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣄⢀⣤⣶⣷⣦⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⠿⣿⡿⢋⠈⠛⠿⢿⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -27,7 +27,8 @@ cat <<END
 ⠀⠀⠀⣀⠤⠃⠀⣼⠀⠀⠀⠀⠀⠀⠀⠀THE  ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⡇⠀⢣⠀⠀
 ⠰⣿⣉⣀⠤⠤⠤⠽⠀⠀⠀⠀⠀⠀⠀⠀DOJO⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣏⢰⣀⣣⡀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠒⠛⠛⠋
-You should be running this challenge through the VSCode Workspace... Let's check!
+You should be running this challenge through the VSCode Workspace...
+Let's check!
 END
 
 echo -n "Checking"
@@ -44,5 +45,6 @@ then
 	echo -n "Your flag: "
 	cat /flag
 else
-	echo "NOPE! Please run this challenge from the VSCode Workspace (rather than Desktop or SSH)!"
+	echo "NOPE! Please run this challenge from the VSCode Workspace (rather than Desktop"
+	echo "or SSH)!"
 fi
