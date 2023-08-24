@@ -38,13 +38,14 @@ then
 	echo -n "Your flag: "
 	cat /flag
 	cat <<END
+
 Now, copy your flag out of the Desktop! This takes some work. The steps:
 
 1. Select the flag with your mouse.
 2. Right click, Copy the flag.
 3. The flag is now in the dojo's clipboard, but not your system's clipboard!
 4. Click on the ▸ button on the left edge of the Desktop.
-5. Click on the 📋 (Clipboard) button. The Dojo's clipboard will appear!
+5. Click on the Clipboard button. The Dojo's clipboard will appear!
 6. You can now copy these contents to get them into your system's clipboard!
 7. After copying the contents, paste them into the flag submission box!
 END
