@@ -1,0 +1,65 @@
+#!/opt/pwncollege/bash
+
+# art from https://emojicombos.com/karate-ascii-art
+cat <<END
+
+⠀⡠⢲⠢⢄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⡀⠀⠀
+⠸⠤⠾⢥⡤⠀⠉⠂⢄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡛⠻⣿⡆⠀
+⠀⠀⠀⠀⠈⠑⠤⡈⠤⠁⠢⣀⢀⡤⢤⣀⠠⠔⠒⠂⡰⡆⣀⢴⠃⠀
+⠀⠀⠀⠀⠀⠀⠀⠈⠂⢔⠂⢀⡘⠽⢋⣰⣡⡊⠆⢈⠀⡁⠀⣸⢢⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠑⢦⢆⢀⡴⢡⡇⢢⠀⠉⢀⠇⠊⠁⠞⠇
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⣿⠀⠀⡇⡸⠉⠉⠀⡄⢄⢨⠄⣤
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⡴⣻⣿⠶⡦⠐⠒⠑⠖⠁⠴⠋
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢴⡿⡟⢯⣼⣠⠇⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡏⣰⠇⠉⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣧⡟⠀⡆⠀WELCOME
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠃⠐⢵⠁⠀THE
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠃⠀⢀⡌⠀TO
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠁⠲⠂⡁⠀DOJO
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠣⠄⠀⠵⠆⠀
+
+You should be running this challenge through the terminal program in the
+GUI Desktop... Let's check!
+END
+
+echo -n "Checking"
+for i in {1..10}
+do
+	echo -n "."
+	sleep 0.1
+done
+echo -n $'\r'
+
+if [ "$TERM" == "xterm-256color" ]
+then
+	echo "PASSED! You are running in the Desktop!"
+	echo -n "Your flag: "
+	cat /flag
+	cat <<END
+Let's learn to paste from outside of the Desktop. Like copying, pasting is a
+bit involved... After copying something on your system outside of the dojo
+(for example, from another browser tab):
+
+1. Click on the ▸ button on the left edge of the Desktop.
+2. Click on the 📋 (Clipboard) button. The Dojo's clipboard will appear!
+3. Overwrite the contents of the dojo's clipboard with the contents of your
+   system's clipboard (for example, Ctrl-A followed by Ctrl-V).
+4. Now the contents are in the dojo's clipboard!
+5. Paste the contents into the terminal (Right Click->Paste).
+
+Now, go copy the secret token from the challenge description, then paste it
+into this terminal using the steps above!
+END
+
+	read TOKEN
+	read CORRECT </challenge/.secret
+	if [ "$TOKEN" == "$CORRECT" ]
+	then
+		echo -n "CORRECT! Your flag: "
+		cat /flag
+	else
+		echo "Incorrect. Please try again!"
+	fi
+else
+	echo "NOPE! Run this challenge from the Desktop (rather than VSCode or SSH)!"
+fi

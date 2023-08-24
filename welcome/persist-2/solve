@@ -1,0 +1,48 @@
+#!/opt/pwncollege/bash
+
+# art from https://ascii.co.uk/art/karate
+
+cat <<"END"
+                  .===
+                 / __)        _
+                 (  ||_.''.  {_}
+       ----       | =/ \   /' :
+   WELCOME       /\_~/() \__.'     ____
+      ---- TO   |_   \   //  |''''`    |-'8,
+         --   _ :  |_ '-[]___/   '.....\--.O
+       THE   {_}'' .'\ //  |':````
+        DOJO  '...'   /\\_/    `,
+                     //|\ '.._.'
+            snd     // //
+
+END
+
+if [ ! -f /home/hacker/leap/secret ] || [ ! -f /challenge/secret ]
+then
+	cat <<END
+It looks like you did not properly do the previous challenger (persistence
+part 1). Please go back and redo it!
+END
+	exit
+fi
+
+read TOKEN </home/hacker/leap/secret
+read CORRECT </challenge/secret
+
+if [ "$TOKEN" == "$CORRECT" ]
+then
+	cat <<END
+Congratulations! The file that you created in the last challenge is still
+present in your home directory! Please keep in mind that, though the contents
+of /home/hacker persist, other areas (such as /tmp, /challenge, and so on) do
+not.
+
+Anyways, here is your flag:
+END
+	cat /flag
+else
+	cat <<END
+Somehow the contents of /home/hacker/leap/secret are not correct... Please
+go back and redo the first persistence challenge to create the file.
+END
+fi

@@ -1,46 +1,79 @@
-id: example
+id: welcome
 
-name: Example Dojo
+name: Welcome Dojo
 
 description: |
-  This is an [example dojo](https://github.com/pwncollege/example-dojo).
-  Fork this repository, and create your own dojo!
+  Welcome to the Dojo!
+  Here, you will learn how to use the dojo environment through several approachable challenges!
 
 type: example
 
 award:
-  emoji: 😀
+  emoji: 🥋
 
 modules:
 
-  - id: hello
-    name: Hello
-    description: The first module in this example dojo.
+  - id: welcome
+    name: Welcome
+    description: Let's learn how to use the dojo!
 
     challenges:
 
-      - id: apple
-        name: Apple
-        description: This is apple.
+      - id: vscode
+        name: Using the VSCode Workspace
+        description: |
+          Welcome to the dojo!
+          This platform uses "flags" to track your progress.
+          Flags are cryptographic tokens that are given to you when you solve challenges.
+          The challenges themselves live in the `/challenge` directory.
 
-      - id: banana
-        name: Banana
-        description: This is banana.
+          You can interact with the challenges in three ways:
+          - You can use the Dojo Workspace, a version of VSCode running inside the dojo
+          - You can use the Dojo Desktop, a full Linux GUI desktop running inside the dojo
+          - You can set up your ssh client and ssh in
 
-  - id: world
-    name: World
-    description: The second module in this example dojo.
+          We'll run you through the first two in this module, starting from the Workspace!
+          Please start this challenge using the Start button, wait for confirmation that it started, and then click on the Workspace tab in the navigation bar!
+          Once VSCode loads, launch a terminal (press `Control-Shift-Backtick` or click the `☰` button in VSCode's left panel, select the Terminal menu, and click New Terminal) and run the challenge!
+          In this case, the challenge program is `/challenge/solve`.
+          Just by running it in VSCode, you will get the flag!
 
-    challenges:
+      - id: desktop
+        name: Using the GUI Desktop
+        description: |
+          Next, we will explore the Desktop!
+          Start the challenge and click over to the Desktop on the navigation tab.
+          This challenge requires you to run `/challenge/solve` from the terminal inside the Desktop.
 
-      - id: earth
-        name: Earth
-        description: This is earth.
+      - id: desktop-paste
+        name: Pasting from the Desktop
+        description: |
+          Next, we will learn to paste into the Desktop!
+          You will need this secret token: `f8e5eb3178faf47ce5692f7f618e8f6f0e8769de7dd67ffe62b4375430a31e1b9d18a9574e8231e98572`
 
-      - id: mars
-        name: Mars
-        description: This is mars.
+      - id: flag
+        name: The Flag File
+        description: |
+          So far, the challenges have been giving you the flags directly.
+          Now, you will learn that the flag actually lives in the `/flag` file.
+          The `/flag` file is only readable to the challenge, because the challenge runs as the `root` user.
+          Since you are the `hacker` user in the dojo, the only way to retrieve the flag is to solve the challenge.
 
-      - id: venus
-        name: Venus
-        description: This is venus.
+          This challenge's `/challenge/solve` program will make the flag world-readable, but won't print it to you.
+          You will need to read `/flag` yourself after running `/challenge/solve`.
+
+      - id: Practice
+        name: Using Practice Mode
+        description: |
+          You can launch challenges in two modes, using the buttons below!
+          So far, you have been using `Start`, which launches the challenge so that you can attempt to solve it for real.
+          You can also `Practice`!
+          This will grant you administrative privileges (via `sudo`) in the challenge container, allowing you greater capabilities to debug solutions and otherwise experiment with the challenge.
+
+          You never *need* Practice mode to solve a challenge, except for this challenge, because it is designed to expose you to Practice mode.
+          This challenge has a `/challenge/secret` file that is only readable by root, but it doesn't change between Practice mode and normal mode.
+          To solve this challenge:
+          - Launch the challenge in Practice mode.
+          - Read the `/challenge/secret` file.
+          - Relaunch the challenge in normal mode (using Start).
+          - Provide the secret when `/challenge/solve` asks for it.

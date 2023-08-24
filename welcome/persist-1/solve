@@ -1,0 +1,53 @@
+#!/opt/pwncollege/bash
+
+# art from https://ascii.co.uk/art/karate
+
+cat <<"END"
+                  .===
+                 / __)        _
+                 (  ||_.''.  {_}
+       ----       | =/ \   /' :
+   WELCOME       /\_~/() \__.'     ____
+      ---- TO   |_   \   //  |''''`    |-'8,
+         --   _ :  |_ '-[]___/   '.....\--.O
+       THE   {_}'' .'\ //  |':````
+        DOJO  '...'   /\\_/    `,
+                     //|\ '.._.'
+            snd     // //
+
+END
+
+if [ ! -f /home/hacker/leap/secret ]
+then
+	cat <<END
+Please create a "leap" directory in your home directory, and copy the
+/challenge/secret file into it! The resulting file should have the path of
+/home/hacker/leap/secret and should have the same contents as /challenge/secret.
+
+Once you have done this, rerun this script and I will give you the flag.
+END
+	exit
+fi
+
+if [ "$(realpath /home/hacker/leap/secret)" != "/home/hacker/leap/secret" ]
+then
+	echo "Please don't use symbolic link shenanigans; just copy the file!"
+	exit
+fi
+
+read TOKEN </home/hacker/leap/secret
+read CORRECT </challenge/secret
+
+if [ "$TOKEN" == "$CORRECT" ]
+then
+	cat <<END
+The file is present and correct! In the next challenge, you will see that
+the file stays around! For now, here is the flag for this challenge:
+END
+	cat /flag
+else
+	cat <<END
+The contents of the /home/hacker/leap/secret file appear to be incorrect.
+Please copy it directly from /challenge/secret.
+END
+fi

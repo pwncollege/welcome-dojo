@@ -1,0 +1,53 @@
+#!/opt/pwncollege/bash
+
+# art from https://emojicombos.com/karate-ascii-art
+cat <<END
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣠⣄⡀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣦⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠓⡀⠐⠈⣻⠇⠀⠀⠀⠀⠀
+⠀⠀⢶⡆⠀⠀⠀⠀⡔⠚⠸⡂⠄⢸⠂⢄⡀⠀⠀⠀
+⠀⠀⣜⠷⡀⠀⠠⠊⠀⠀⠠⡑⢄⡈⡄⠀⡇⠀⠀⠀
+⠀⠀⠀⣷⠋⠐⠁⠀⢡⠀⠀⠐⡰⢠⠁⠀⠃⠀⠀⠀
+⠀⠀⠀⠈⠢⠀⢉⠔⢡⠀⠀⡰⢡⠃⠀⢸⣀⡀⠀⠀
+⠀⠀⠀⠀⠀⠈⠁⠀⠀⢆⣔⠡⠁⠀⠀⠨⠿⠇⠀⠀
+WELCOME⠀⢠⠊⠙⠻⠷⢶⣶⢇⠀⠀⠀⠀
+⠀⠀⠀⠀TO⠀⢠⡣⢂⠀⠀⠀⣿⠸⡆⠱⡀⠀⠀
+⠀⠀THE⠀⠀⠎⠀⠘⠀⠀⠀⣿⡀⢿⠔⠢⡀⠀
+DOJO⠀⠀⡌⠀⠀⠀⡜⠀⠀⠀⠈⢜⠃⠀⠱⡀
+⠀⠀⠀⠀⠀⡐⠀⠀⠀⠌⠀⠀⠀⠀⠀⠀⠂⠀⠀⡇
+⠀⠀⠀⠀⡐⠀⠀⠀⠎⠀⠀⠀⠀⠀⠀⢸⠀⠀⣼⠀
+⠀⠀⠀⡰⠀⠀⢀⠎⠀⠀⠀⠀⠀⠀⠀⡈⠀⠀⢸⠀
+⠀⠀⢰⡁⠀⢀⠎⠀⠀⠀⠀⠀⠀⠀⠀⠧⣀⠀⢸⠀
+⣤⠂⣁⣀⡱⠊⠀⠀⠀⠀⠀⠀⠀⠀⢀⠃⠂⢄⡁⠀
+⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠁⠉⠁⠀
+You should be running this challenge through the terminal program in the
+GUI Desktop... Let's check!
+END
+
+echo -n "Checking"
+for i in {1..10}
+do
+	echo -n "."
+	sleep 0.1
+done
+echo -n $'\r'
+
+if [ "$TERM" == "xterm-256color" ]
+then
+	echo "PASSED! You are running in the Desktop!"
+	echo -n "Your flag: "
+	cat /flag
+	cat <<END
+Now, copy your flag out of the Desktop! This takes some work. The steps:
+
+1. Select the flag with your mouse.
+2. Right click, Copy the flag.
+3. The flag is now in the dojo's clipboard, but not your system's clipboard!
+4. Click on the ▸ button on the left edge of the Desktop.
+5. Click on the 📋 (Clipboard) button. The Dojo's clipboard will appear!
+6. You can now copy these contents to get them into your system's clipboard!
+7. After copying the contents, paste them into the flag submission box!
+END
+else
+	echo "NOPE! Run this challenge from the Desktop (rather than VSCode or SSH)!"
+fi

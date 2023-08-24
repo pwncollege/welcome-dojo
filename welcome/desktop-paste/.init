@@ -1,0 +1,4 @@
+#!/bin/bash
+
+stat /bin/sudo | grep Access.*755 || echo "PRACTICE" > /challenge/.secret
+chmod 700 /challenge/.secret

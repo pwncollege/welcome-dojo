@@ -1,6 +1,0 @@
-#!/opt/pwn.college/python
-
-import sys
-
-print("3.... 2... 1...")
-print(sys.argv[1])
