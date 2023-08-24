@@ -1,7 +1,7 @@
 #!/opt/pwn.college/bash
 
 # art from https://emojicombos.com/karate-ascii-art
-cat <<END
+cat <<END | while read LINE; do echo "$LINE"; sleep 0.1; done
 
 ⠀⡠⢲⠢⢄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⡀⠀⠀
 ⠸⠤⠾⢥⡤⠀⠉⠂⢄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡛⠻⣿⡆⠀
@@ -32,10 +32,9 @@ echo -n $'\r'
 
 if [ "$TERM_PROGRAM" != "vscode" ] && [ "$TERM" == "xterm-256color" ]
 then
-	echo "PASSED! You are running in the Desktop!"
-	echo -n "Your flag: "
-	cat /flag
 	cat <<END
+You are running in the Desktop!
+
 Let's learn to paste from outside of the Desktop. Like copying, pasting is a
 bit involved... After copying something on your system outside of the dojo
 (for example, from another browser tab):
