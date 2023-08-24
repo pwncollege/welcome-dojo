@@ -86,3 +86,9 @@ modules:
 
           This challenge, and the next, will drive home the point by having you write a file in your home directory.
           Launch this challenge and follow its instructions!
+
+      - id: persist-2
+        name: Persistent Home Directories - Two
+        description: |
+          Now that you have created a file in your home directory, this challenge will use it!
+          Launch this challenge and follow its instructions!
