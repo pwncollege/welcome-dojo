@@ -40,7 +40,7 @@ bit involved... After copying something on your system outside of the dojo
 (for example, from another browser tab):
 
 1. Click on the ▸ button on the left edge of the Desktop.
-2. Click on the 📋 (Clipboard) button. The Dojo's clipboard will appear!
+2. Click on the Clipboard button. The Dojo's clipboard will appear!
 3. Overwrite the contents of the dojo's clipboard with the contents of your
    system's clipboard (for example, Ctrl-A followed by Ctrl-V).
 4. Now the contents are in the dojo's clipboard!
