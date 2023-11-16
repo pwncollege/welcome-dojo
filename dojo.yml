@@ -1,12 +1,14 @@
 id: welcome
 
-name: The Welcome Dojo
+name: Using The Dojo
 
 description: |
   Welcome to the Dojo!
   Here, you will learn how to use the dojo environment through several approachable challenges!
 
 type: topic
+
+comparator: 0
 
 award:
   emoji: 🥋
