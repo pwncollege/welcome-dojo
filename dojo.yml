@@ -94,3 +94,8 @@ modules:
         description: |
           Now that you have created a file in your home directory, this challenge will use it!
           Launch this challenge and follow its instructions!
+
+    resources:
+      - name: "Getting Started"
+        type: lecture
+        video: DJO1A2neZ6Y
