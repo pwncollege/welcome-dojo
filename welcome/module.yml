@@ -20,3 +20,18 @@ resources:
   - name: "Getting Started"
     type: lecture
     video: DJO1A2neZ6Y
+  - name: "Dojo Functionality That's Not Covered Here"
+    type: markdown
+    content: |
+      Two dojo concepts that this module does not yet cover are connecting over ssh and the VM.
+
+      **Connecting over SSH.**
+      In order to ssh into your challenge instances, you must add a public ssh key to `Settings` > `SSH Key`.
+      You can quickly generate an ssh key by running `ssh-keygen -f key -N ''` in a terminal on your (unix-friendly) host machine.
+      This will generate files `key` and `key.pub`, which are your private and public keys respectively.
+      Once you have linked your ssh key to your account, you can connect to the dojo host.
+      For example, if your URL bar for this page reads `https://EXAMPLE.COM/welcome/welcome`, you would run `ssh -i key hacker@EXAMPLE.COM` to connect into your challenge instance.
+
+      **The VM.**
+      For some of the later (kernel-focused) challenges, you will need to solve the challenge in a virtual machine.
+      You can interact with the virtual machine using the `vm` command.
