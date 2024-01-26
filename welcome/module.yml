@@ -1,0 +1,22 @@
+name: The Welcome Module
+challenges:
+
+  - id: vscode
+    name: Using the VSCode Workspace
+  - id: desktop
+    name: Using the GUI Desktop
+  - id: desktop-paste
+    name: Pasting into the Desktop
+  - id: flag
+    name: The Flag File
+  - id: practice
+    name: Using Practice Mode
+  - id: persist-1
+    name: Persistent Home Directories - One
+  - id: persist-2
+    name: Persistent Home Directories - Two
+
+resources:
+  - name: "Getting Started"
+    type: lecture
+    video: DJO1A2neZ6Y
