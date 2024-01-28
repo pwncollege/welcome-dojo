@@ -5,7 +5,7 @@ name: Getting Started
 type: topic
 
 award:
-  emoji: 🖥️
+  emoji: 💻
 
 modules:
   - id: welcome
