@@ -39,6 +39,13 @@ do
 done
 echo -n $'\r'
 
+if [ "$UID" -ne 0 ]
+then
+	echo "You seem to be running this challenge using 'bash $0' or 'sh $0'."
+	echo "Please run the challenge directly (e.g., without 'bash' or 'sh')."
+	exit 1
+fi
+
 if [ "$TERM_PROGRAM" == "vscode" ]
 then
 	echo "PASSED! You are running in the Workspace!"
