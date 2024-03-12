@@ -3,12 +3,16 @@ challenges:
 
   - id: vscode
     name: Using the VSCode Workspace
+    allow_privileged: false
   - id: desktop
     name: Using the GUI Desktop
+    allow_privileged: false
   - id: desktop-paste
     name: Pasting into the Desktop
+    allow_privileged: false
   - id: flag
     name: The Flag File
+    allow_privileged: false
   - id: practice
     name: Using Practice Mode
   - id: persist-1
