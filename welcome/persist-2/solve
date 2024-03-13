@@ -20,7 +20,7 @@ END
 if [ ! -f /home/hacker/leap/secret ] || [ ! -f /challenge/secret ]
 then
 	cat <<END
-It looks like you did not properly do the previous challenger (persistence
+It looks like you did not properly do the previous challenge (persistence
 part 1). Please go back and redo it!
 END
 	exit
