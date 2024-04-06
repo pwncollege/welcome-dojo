@@ -35,7 +35,7 @@ echo -n $'\r'
 if [ "$UID" -ne 0 ]
 then
 	echo "You seem to be running this challenge using 'bash $0' or 'sh $0'."
-	echo "Please run the challenge directly (e.g., without 'bash' or 'sh', just '$0')."
+	echo "Please run the challenge directly (e.g., without 'bash' or 'sh', just './$0')."
 	exit 1
 fi
 
