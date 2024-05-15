@@ -23,5 +23,6 @@ do
 	echo -n "."
 	sleep 0.1
 done
+echo
 echo "Congratulations! Your flag is:"
 cat /flag
