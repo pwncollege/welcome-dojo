@@ -14,5 +14,5 @@ This dojo contains the first few challenges that you'll tackle, and they'll teac
 Because flags are countable, dojos and modules maintain a leaderboard of top hackers!
 Check it out down at the bottom of the page for this whole dojo.
 
-If you're ready to proceed, click/tap on Dojo Training Module below, in the module list!
+If you're ready to proceed, click/tap on `Using the Dojo` below, in the module list!
 Good luck!
