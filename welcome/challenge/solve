@@ -1,0 +1,27 @@
+#!/opt/pwn.college/bash
+
+# art from https://emojicombos.com/kick-ascii-art
+cat <<END | while read LINE; do echo "$LINE"; sleep 0.1; done
+⠀⢀⣶⣿⣿⣷⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠘⣿⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀⢀⣤⡀⠀⠀⠀⠀⠀⠀
+⠀⠀⠈⠙⠋⢁⣀⣠⣤⣀⣀⣀⣰⣿⠟⠁⠀⠀⠀⠀⠀⠀
+⠀⠀⣀⣴⣾⣿⣿⣿⣿⣿⠿⠿⠿⠋⠀⠀⠀⠀⣀⣤⣶⡆
+⢠⣾⣿⣿⢿⣿⣿⣿⣿⣧⠀⠀⠀⣀⣤⣴⣾⣿⡿⠟⠋⠀
+⠘⣿⣇⠀⠈⢻⣿⣿⣿⣿⣷⣶⣿⣿⣿⡿⠛⠉⠀⠀⠀⠀
+⠀⢻⣿⡆⠀⠀⣿⣿⣿⣿⣿⣿⠿⠋⠁⠀⠀⠀⠀⠀⠀⠀
+⠀⠈⠛⠁⠀⠀⢹⣿⣿⡟⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢸⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠘⣿⣿⡇⠀WELCOME⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⣿⣿⡇⠀TO⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⣿⣿⡇⠀THE⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢿⣿⠁⠀DOJO⠀⠀⠀⠀⠀⠀⠀
+
+END
+
+for i in {1..10}
+do
+	echo -n "."
+	sleep 0.1
+done
+echo "Congratulations! Your flag is:"
+cat /flag
