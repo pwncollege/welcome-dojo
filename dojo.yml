@@ -9,3 +9,4 @@ award:
 
 modules:
   - id: welcome
+  - id: discord
