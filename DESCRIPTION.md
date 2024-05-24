@@ -19,4 +19,6 @@ When you're ready to Enter the Dojo, click/tap on `Using the Dojo` below, in the
 The yang to the dojo's yin is our Discord server.
 Learn more and connect up by heading over to `Joining the Discord` in the module list below!
 
+Once you've learned to Use the Dojo and have Joined the Discord, you may move on to the [main material](/dojos).
+
 Good luck on your cybersecurity journey!
