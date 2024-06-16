@@ -10,6 +10,9 @@ challenges:
   - id: desktop-paste
     name: Pasting into the Desktop
     allow_privileged: false
+  - id: restart
+    name: Restarting Challenges
+    allow_privileged: false
   - id: challenge
     name: Challenge Programs
     allow_privileged: false
