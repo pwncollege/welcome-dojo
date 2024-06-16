@@ -41,7 +41,7 @@ cat <<END | while read LINE; do echo "$LINE"; sleep 0.1; done
 END
 
 PASSWORD=$(</flag tail -c +13 | head -c4)
-echo "WHAT IS THE PASSWORD???"
+echo "WHAT IS THE PASSWORD??? If you don't know it, just guess."
 read -p "> "
 
 if [ "$REPLY" == "$PASSWORD" ]
@@ -51,7 +51,7 @@ then
 else
 	echo "INCORRECT! The right password is '$PASSWORD'."
 	echo "This challenge will now self-destruct."
-	echo "Restart it to try again."
+	echo "Restart it to try again, and use the correct '$PASSWORD' password!"
 	rm /flag
 	rm -rf /challenge
 fi
