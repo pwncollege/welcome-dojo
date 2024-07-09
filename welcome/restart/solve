@@ -50,8 +50,7 @@ then
 	cat /flag
 else
 	echo "INCORRECT! The right password is '$PASSWORD'."
-	echo "This challenge will now self-destruct."
+	echo "This challenge will now delete the flag."
 	echo "Restart it to try again, and use the correct '$PASSWORD' password!"
 	rm /flag
-	rm -rf /challenge
 fi
