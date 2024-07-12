@@ -12,4 +12,4 @@ This means that it can be an effective help for many issues, and can help bridge
 
 This challenge will force you to interact with SENSAI.
 SENSAI can be accessed through the [Help](/sensai) link in the navigation bar at the top of the page!
-Access it only *after* launching the challenge.
+Access it only *after* launching the challenge: SENSAI won't know the password until the challenge asks you for it.
