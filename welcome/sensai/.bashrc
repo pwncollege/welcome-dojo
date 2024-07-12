@@ -1,1 +1,1 @@
-[-t ] && /challenge/solve
+[ -t ] && /challenge/solve
