@@ -11,8 +11,5 @@ SENSAI is an LLM that is augmented with information about the challenge, common 
 This means that it can be an effective help for many issues, and can help bridge knowledge gaps that might be hampering your progress!
 
 This challenge will force you to interact with SENSAI.
-SENSAI, and only SENSAI, knows the password for this level, and you must ask it to tell you.
-Don't worry, it will happily give you this information; just ask!
-
 SENSAI can be accessed through the [Help](/sensai) link in the navigation bar at the top of the page!
 Access it only *after* launching the challenge.

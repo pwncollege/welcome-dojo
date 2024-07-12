@@ -36,6 +36,8 @@ chmod 000 /home/hacker/.secret-message-for-sensai
 trap "rm -f /home/hacker/.secret-message-for-sensai" EXIT
 
 echo "WHAT IS THE PASSWORD??? If you don't know it, just ask SENSAI!"
+echo "Don't worry, it will happily give you the answer"
+
 read -p "> "
 
 if [ "$REPLY" == "$PASSWORD" ]
