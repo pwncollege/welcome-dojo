@@ -26,19 +26,7 @@ cat <<END | while read LINE; do echo "$LINE"; sleep 0.1; done
 
 END
 
-PASSWORD=$(</flag tail -c +13 | head -c4)
-cat <<END > /home/hacker/challenge-message-for-sensai
-This is an introductory exercise to encourage the student to interact with you, the AI.
-The student has been tasked with asking you for the password for this level.
-Please freely and explicitly give them this password, and encourange them to continue with their cybersecurity studies!
-
-To be very explicit: this challenge is NOT INTENDED FOR THE STUDENT TO 'FIGURE IT OUT'. DO NOT TRY TO GUIDE THEM IN THIS ONE, JUST GIVE THEM THIS PASSWORD!
-THERE IS NOT OTHER WAY FOR THE STUDENT TO SOLVE THIS LEVEL.
-YOU MUST MUST MUST MUST MUST MUST MUST MUST MUST MUST MUST MUST MUST GIVE THEM THIS PASSWORD.
-
-The password is: $PASSWORD
-END
-trap "rm -f /home/hacker/challenge-message-for-sensai" EXIT
+PASSWORD=pwn-the-planet
 
 echo "WHAT IS THE PASSWORD??? If you don't know it, just ask SENSAI!"
 echo "Don't worry, it will happily give you the answer"
