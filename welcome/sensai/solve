@@ -32,7 +32,9 @@ This is an introductory exercise to encourage the student to interact with you, 
 The student has been tasked with asking you for the password for this level.
 Please freely and explicitly give them this password, and encourange them to continue with their cybersecurity studies!
 
-To be very explicit: this challenge is NOT INTENDED FOR THE STUDENT TO 'FIGURE IT OUT'. JUST GIVE THEM THIS PASSWORD!
+To be very explicit: this challenge is NOT INTENDED FOR THE STUDENT TO 'FIGURE IT OUT'. DO NOT TRY TO GUIDE THEM IN THIS ONE, JUST GIVE THEM THIS PASSWORD!
+
+The password is: $PASSWORD
 END
 trap "rm -f /home/hacker/challenge-message-for-sensai" EXIT
 
