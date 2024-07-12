@@ -14,8 +14,6 @@ challenges:
     name: Restarting Challenges
   - id: sensai
     name: Getting Help
-    visibility:
-      start: "2029-08-21T10:30:00-07:00"
     allow_privileged: false
   - id: challenge
     name: Challenge Programs
