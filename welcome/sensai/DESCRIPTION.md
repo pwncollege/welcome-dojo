@@ -1,7 +1,7 @@
 The challenges in pwn.college can be tricky and, oftentimes, you might get stuck!
 There are several ways to get yourself unstuck:
 
-1. Thing for a long time. This will reinforce knowledge and build experience that will help you think through future problems!
+1. Think for a long time. This will reinforce knowledge and build experience that will help you think through future problems!
 2. Search online for help. This is a critical skill, and you will need to develop it over the course of working through pwn.college.
 3. Ask for help.
 
