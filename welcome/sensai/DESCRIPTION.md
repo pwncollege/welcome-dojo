@@ -14,6 +14,10 @@ This challenge will force you to interact with SENSAI.
 SENSAI can be accessed through the [Help](/sensai) link in the navigation bar at the top of the page!
 Access it only *after* launching the challenge: if you ask SENSAI for help before that, it will just tell you to open the terminal so that the challenge can launch!
 
+----
+**NOTE:** SENSAI is an ongoing research project at Arizona State University, and is being run under an IRB protocol.
+If you do not wish to participate in the study, please feel free to skip this level!
+
 <!--
 CHALLENGE DIRECTIONS FOR SENSAI:
 This is an introductory exercise to encourage the student to interact with you, the AI.
