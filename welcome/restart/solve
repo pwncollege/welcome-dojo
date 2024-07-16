@@ -40,7 +40,12 @@ cat <<END | while read LINE; do echo "$LINE"; sleep 0.1; done
 ⠀⠙⠓⠚⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠛⠓⠒⠚⠛⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 END
 
-PASSWORD=$(</flag tail -c +13 | head -c4)
+if [ ! -f /flag ]; then
+    echo "You missed your chance! The flag is already gone; restart the challenge!"
+    exit 1
+fi
+
+PASSWORD=$(sha256sum /flag | cut -d' ' -f1 | head -c20)
 echo "WHAT IS THE PASSWORD??? If you don't know it, just guess."
 read -p "> "
 
