@@ -20,7 +20,7 @@ END
 if [ ! -f /home/hacker/leap/secret ]
 then
 	cat <<END
-Please create a "leap" directory in your home directory, and copy the
+Please create directory named "leap" in your home directory, and copy the
 /challenge/secret file into it! The resulting file should have the path of
 /home/hacker/leap/secret and should have the same contents as /challenge/secret.
 
