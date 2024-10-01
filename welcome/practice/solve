@@ -21,7 +21,7 @@ cat <<END | while read LINE; do echo "$LINE"; sleep 0.1; done
 ⠀⠀⠀⠀⠀⠀⠻⣿⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 END
 
-if stat /bin/sudo | grep -q Access...4755
+if [ -e /run/dojo/var/root/privileged ]
 then
 	cat <<END
 You are running in practice mode! The secret you need is in /challenge/secret.
