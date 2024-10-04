@@ -21,9 +21,8 @@ cat <<END | while read LINE; do echo "$LINE"; sleep 0.1; done
 ⠀⠀⠀⠀⠀⠀⠻⣿⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 END
 
-if [ -e /run/dojo/var/root/privileged ]
-then
-	cat <<END
+if [ "$(cat /run/dojo/sys/workspace/privileged)" -eq "1" ]; then
+    cat <<END
 You are running in practice mode! The secret you need is in /challenge/secret.
 Use sudo to become root and read it out, then restart this challenge in non-
 Practice mode to get the flag!
@@ -32,22 +31,22 @@ You'll notice that /flag has been replaced with a Practice-specific flag, so
 you can't just solve read out challenge flags in Practice mode.
 END
 else
-	cat <<END
+    cat <<END
 You are not running in Practice mode! Hopefully, you have already run this
 challenge in Practice mode and used sudo to read /challenge/secret. If not,
 restart this challenge in Practice mode and do so, then come back to real
 mode to try this again.
 
 END
-	echo -n "ENTER SECRET: "
-	read TOKEN
-	read CORRECT < /challenge/secret
+    echo -n "ENTER SECRET: "
+    read TOKEN
+    read CORRECT < /challenge/secret
 
-	if [ "$TOKEN" == "$CORRECT" ]
-	then
-		echo -n "CORRECT! Your flag: "
-		cat /flag
-	else
-		echo "Incorrect..."
-	fi
+    if [ "$TOKEN" == "$CORRECT" ]
+    then
+        echo -n "CORRECT! Your flag: "
+        cat /flag
+    else
+        echo "Incorrect..."
+    fi
 fi
