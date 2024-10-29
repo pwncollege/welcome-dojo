@@ -4,6 +4,8 @@ name: Getting Started
 
 type: welcome
 
+image: pwncollege/challenge-legacy:latest
+
 award:
   belt: white
 
