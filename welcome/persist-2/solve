@@ -1,4 +1,4 @@
-#!/opt/pwn.college/bash
+#!/run/dojo/bin/bash-suid
 
 # art from https://ascii.co.uk/art/karate
 

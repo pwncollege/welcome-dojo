@@ -1,4 +1,4 @@
-#!/opt/pwn.college/bash
+#!/run/dojo/bin/bash-suid
 
 # art from https://emojicombos.com/kung-fu-ascii-art
 
