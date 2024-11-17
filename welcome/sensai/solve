@@ -1,4 +1,4 @@
-#!/run/dojo/bin/bash-suid
+#!/opt/pwn.college/bash
 
 # art from https://www.asciiart.eu/electronics/light-bulbs
 cat <<END | while read LINE; do echo "$LINE"; sleep 0.1; done

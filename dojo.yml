@@ -1,7 +1,5 @@
 id: welcome
 
-image: ubuntu:24.04
-
 name: Getting Started
 
 type: welcome
