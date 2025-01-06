@@ -1,5 +1,3 @@
 #!/bin/bash
 
 echo 'source /challenge/.bashrc' >> /etc/bashrc
-
-chmod 400 /challenge/.secret
