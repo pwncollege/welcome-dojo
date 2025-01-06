@@ -1,3 +1,4 @@
 #!/bin/bash
 
-echo 'source /challenge/.bashrc' >> /etc/bashrc
+echo 'source /challenge/.bashrc' >> /etc/bash.bashrc
+ln -s /etc/bash.bashrc /etc/bashrc

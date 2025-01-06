@@ -1,4 +1,4 @@
-#!/usr/bin/exec-suid -- /bin/bash -p
+#!/usr/bin/exec-suid --real -- /bin/bash -p
 
 # art from https://emojicombos.com/kung-fu-ascii-art
 

@@ -1,4 +1,4 @@
-#!/usr/bin/exec-suid -- /bin/bash -p
+#!/usr/bin/exec-suid --real -- /bin/bash -p
 
 # art from https://www.asciiart.eu/electronics/light-bulbs
 cat <<END | while read LINE; do echo "$LINE"; sleep 0.1; done
