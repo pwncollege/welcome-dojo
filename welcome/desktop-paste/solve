@@ -30,7 +30,21 @@ do
 done
 echo -n $'\r'
 
-if [ "$TERM_PROGRAM" != "vscode" ] && [ "$TERM" == "xterm-256color" ]
+pid=$$
+while [ $pid -ne 0 ]; do
+    cmdline=$(cat /proc/$pid/cmdline | tr '\0' ' ')
+    case "$cmdline" in
+        *"code-server"*) workspace="code"; break ;;
+        *"xfce4-terminal"*) workspace="desktop"; break ;;
+        *"ssh-entrypoint"*) workspace="ssh"; break ;;
+    esac
+    if [ -n "$workspace" ]; then
+        break
+    fi
+    pid=$(grep -oP 'PPid:\s*\K\d+' /proc/$pid/status)
+done
+
+if [ "$workspace" == "desktop" ]
 then
 	cat <<END
 You are running in the Desktop!

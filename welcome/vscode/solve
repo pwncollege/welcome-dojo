@@ -46,12 +46,25 @@ then
 	exit 1
 fi
 
-if [ "$TERM_PROGRAM" == "vscode" ]
+pid=$$
+while [ $pid -ne 0 ]; do
+    cmdline=$(cat /proc/$pid/cmdline | tr '\0' ' ')
+    case "$cmdline" in
+        *"code-server"*) workspace="code"; break ;;
+        *"xfce4-terminal"*) workspace="desktop"; break ;;
+        *"ssh-entrypoint"*) workspace="ssh"; break ;;
+    esac
+    if [ -n "$workspace" ]; then
+        break
+    fi
+    pid=$(grep -oP 'PPid:\s*\K\d+' /proc/$pid/status)
+done
+
+if [ "$workspace" == "vscode" ]
 then
 	echo "PASSED! You are running in the Workspace!"
 	echo -n "Your flag: "
 	cat /flag
 else
-	echo "NOPE! Please run this challenge from the VSCode Workspace (rather than Desktop"
-	echo "or SSH)!"
+	echo "NOPE! Please run this challenge from the VSCode Workspace (rather than Desktop or SSH)!"
 fi
