@@ -60,7 +60,7 @@ while [ $pid -ne 0 ]; do
     pid=$(grep -oP 'PPid:\s*\K\d+' /proc/$pid/status)
 done
 
-if [ "$workspace" == "vscode" ]
+if [ "$workspace" == "code" ]
 then
 	echo "PASSED! You are running in the Workspace!"
 	echo -n "Your flag: "
