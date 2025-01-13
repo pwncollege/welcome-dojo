@@ -30,6 +30,21 @@ challenges:
     name: Persistent Home Directories - Two
 
 resources:
+  - name: "What is pwn.college?"
+    type: lecture
+    video: hh4XAU6XYP0
+  - name: "What is Cybersecurity?"
+    type: lecture
+    video: hIK1Dfjxq4E
+  - name: "Proving Absences of Cybersecurity"
+    type: lecture
+    video: 1H1V1HkVt3k
+  - name: "Proving the (In)Security of Hacking Team"
+    type: lecture
+    video: PxSDB90jlAs
+  - name: "Cybersecurity Ethics"
+    type: lecture
+    video: AO_twkCUTWc
   - name: "Getting Started"
     type: lecture
     video: DJO1A2neZ6Y
