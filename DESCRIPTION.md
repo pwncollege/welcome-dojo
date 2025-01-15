@@ -7,7 +7,7 @@ How do you get these flags?
 Solve challenges!
 
 Each dojo is split into one or more modules.
-Each module, in turn, has several challenge.
+Each module, in turn, has several challenges.
 Each challenge gives you a flag.
 This dojo contains the first few challenges that you'll tackle, and they'll teach you to use the dojo environment!
 
