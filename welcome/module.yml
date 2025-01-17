@@ -13,9 +13,6 @@ challenges:
   - id: restart
     name: Restarting Challenges
     allow_privileged: false
-  - id: sensai
-    name: Getting Help
-    allow_privileged: false
   - id: challenge
     name: Challenge Programs
     allow_privileged: false
