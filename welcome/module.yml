@@ -33,18 +33,23 @@ resources:
   - name: "What is pwn.college?"
     type: lecture
     video: hh4XAU6XYP0
+    slides: 14ZJRIyf0HnoYO1N8GI5ygE-ZVgdhjJrvzkETFLz7NIo
   - name: "What is Cybersecurity?"
     type: lecture
     video: hIK1Dfjxq4E
+    slides: 1NjoOj03eQsjnZWhm-A3IsxTVqeWUqFvR4wgfXnhsnu4
   - name: "Proving Absences of Cybersecurity"
     type: lecture
     video: 1H1V1HkVt3k
+    slides: 1_xdrCm136NzcDl9bqSgAEQuigUHkNjkKmamhaej296Q
   - name: "Proving the (In)Security of Hacking Team"
     type: lecture
     video: PxSDB90jlAs
+    slides: 11Xq_KRFYOaTvrLmfUS93vzym7ierbfdJaCwHKcBKuR4
   - name: "Cybersecurity Ethics"
     type: lecture
     video: AO_twkCUTWc
+    slides: 1mxKZE62tS4Sx7kfduon3vhh1VdTwgNQHeo0wSvpELtA
   - name: "Getting Started"
     type: lecture
     video: DJO1A2neZ6Y
