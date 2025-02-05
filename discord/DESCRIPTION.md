@@ -1,6 +1,6 @@
 Every hacker dons a white belt when they first enter the dojo.
 To truly earn yours, you should join the community as well as hack the challenges.
-Our community lives on [the pwn.college discord server](https://pwn.college/welcome/discord/).
+Our community lives on [the pwn.college discord server](https://discord.gg/pwncollege).
 
 Our discord is a core part of the pwn.college experience.
 It is where you go to get help, guidance, and advice with the material, to chat about your building excitement for cybersecurity, and to celebrate the achievements of yourself and other hackers on the platform.
