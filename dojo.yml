@@ -12,3 +12,4 @@ image: pwncollege/challenge-simple
 modules:
   - id: welcome
   - id: discord
+  - id: sensai

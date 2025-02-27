@@ -1,0 +1,12 @@
+name: Getting Help with SENSAI
+challenges:
+  - id: sensai
+    name: Basic Interaction
+    allow_privileged: false
+  - id: sensai-terminal
+    name: Terminal Context
+    allow_privileged: false
+  - id: sensai-file
+    name: File Context
+    allow_privileged: false
+  

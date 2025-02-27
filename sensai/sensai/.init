@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo 'source /challenge/.bashrc' >> /etc/bash.bashrc
+ln -s /etc/bash.bashrc /etc/bashrc
+
+chmod 4711 /challenge/solve
