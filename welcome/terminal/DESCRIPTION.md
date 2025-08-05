@@ -6,12 +6,13 @@ We make launching the terminal easy: when you start a challenge, we do it for yo
 Just click `▶ Start` below, and this challenge will start.
 Once it's loaded, the terminal will appear automatically right under this text, and you will be granted your first flag!
 
+**Flag?**
 As a reminder, this platform uses flags to track your progress.
 Flags are cryptographic tokens that are given to you when you solve challenges.
 Once you see it, copy-paste it into the submission box below and submit!
 Then, once you get the confirmation that the flag was correct, move on to the next challenge!
 
-Try it now: launch the terminal, copy the flag, and paste it into the `Flag` textbox below!
+**Try it now:** launch the terminal, copy the flag, and paste it into the `Flag` textbox below!
 
 ----
 **NOTE:**
