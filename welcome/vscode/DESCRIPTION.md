@@ -1,6 +1,7 @@
 This challenge will teach you to use the Visual Studio Code workspace.
 You can start this challenge using the Start button below.
-Wait for confirmation that it started, and then click on the Workspace tab in the navigation bar (or, if you are quick enough, the Workspace link in the brief popup)!
+When it starts, it should automatically bring up the Visual Studio Code interface right below this description.
+You can use it as-is, or you can click the "fullscreen" button (⛶) to full-screen the interface for more room.
 Once VSCode loads, launch a terminal (press `Control-Shift-Backtick` or click the `☰` button in VSCode's left panel, select the Terminal menu, and click New Terminal) and run the challenge!
 
 When we detect that you have launched the terminal in VSCode, we will give you the flag!
