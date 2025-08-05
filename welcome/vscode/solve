@@ -27,7 +27,7 @@ cat <<END | while read LINE; do echo "$LINE"; sleep 0.1; done
 ⠀⠀⠀⣀⠤⠃⠀⣼⠀⠀⠀⠀⠀⠀⠀⠀THE  ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⡇⠀⢣⠀⠀
 ⠰⣿⣉⣀⠤⠤⠤⠽⠀⠀⠀⠀⠀⠀⠀⠀DOJO⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣏⢰⣀⣣⡀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠒⠛⠛⠋
-You should be running this challenge through the VSCode Workspace...
+You should be running this challenge through Visual Studio Code...
 Let's check!
 END
 
