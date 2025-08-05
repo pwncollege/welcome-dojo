@@ -46,6 +46,7 @@ while [ $pid -ne 0 ]; do
         *"code-server"*) workspace="code"; break ;;
         *"xfce4-terminal"*) workspace="desktop"; break ;;
         *"ssh-entrypoint"*) workspace="ssh"; break ;;
+        *"ttyd"*) workspace="ttyd"; break ;;
     esac
     if [ -n "$workspace" ]; then
         break

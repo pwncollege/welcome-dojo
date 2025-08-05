@@ -61,11 +61,11 @@ while [ $pid -ne 0 ]; do
     pid=$(grep -oP 'PPid:\s*\K\d+' /proc/$pid/status)
 done
 
-if [ "$workspace" == "code" ]
+if [ "$workspace" == "ttyd" ]
 then
-	echo "PASSED! You are running in the Workspace!"
+	echo "PASSED! You are running in the Terminal!"
 	echo -n "Your flag: "
 	cat /flag
 else
-	echo "NOPE! Please run this challenge from the VSCode Workspace (rather than Desktop or SSH)!"
+	echo "NOPE! Please run this challenge from the Terminal Workspace (rather than VSCode, Desktop, or SSH)!"
 fi

@@ -1,6 +1,9 @@
 name: Using the Dojo
 challenges:
 
+  - id: terminal
+    name: Using the Terminal
+    allow_privileged: false
   - id: vscode
     name: Using the VSCode Workspace
     allow_privileged: false
