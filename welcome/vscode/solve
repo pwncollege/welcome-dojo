@@ -67,5 +67,5 @@ then
 	echo -n "Your flag: "
 	cat /flag
 else
-	echo "NOPE! Please run this challenge from the VSCode Workspace (rather than Desktop or SSH)!"
+	echo "NOPE! Please run this challenge from the VSCode Workspace (rather than the Terminal or Desktop)!"
 fi

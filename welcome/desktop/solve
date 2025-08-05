@@ -72,5 +72,5 @@ Now, copy your flag out of the Desktop! This takes some work. The steps:
 7. After copying the contents, paste them into the flag submission box!
 END
 else
-	echo "NOPE! Run this challenge from the Desktop (rather than VSCode or SSH)!"
+	echo "NOPE! Run this challenge from the Desktop (rather than the Terminal or VSCode)!"
 fi
