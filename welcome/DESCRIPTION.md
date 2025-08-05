@@ -9,6 +9,6 @@ You can interact with challenges in four ways:
 
 We'll run you through the first three in this module, and show off some other features of the platform!
 
-Below, you will see a list of learning resources ("Lectures and Reading") and a set of practice problems ("Challenges").
+Below, you will see a list of learning `Resources` and a set of practice problems (`Challenges`).
 Each entry in the list is expandable: click/tap on it to expand the content.
-You can go ahead and watch the Getting Started video below, or dive straight into the `Using the Terminal` challenge!
+You can go ahead and watch the introductory lecture videos below, or dive straight into the `Using the Terminal` challenge!
