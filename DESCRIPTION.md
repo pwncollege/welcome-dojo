@@ -1,5 +1,5 @@
 Welcome to the Dojo!
-This dojo is designed to give you a crash course in the use of this platform, and set you up to for future success.
+This dojo is designed to give you a crash course in the use of this platform, and set you up for future success.
 
 The core of your experience will be the capture of flags.
 Flags are data tokens that you can redeem for points.
