@@ -1,36 +1,4 @@
 name: Using the Dojo
-challenges:
-
-  - id: terminal
-    name: Using the Terminal
-    allow_privileged: false
-  - id: vscode
-    name: Using the VSCode Workspace
-    allow_privileged: false
-  - id: desktop
-    name: Using the GUI Desktop
-    allow_privileged: false
-  - id: desktop-paste
-    name: Pasting into the Desktop
-    allow_privileged: false
-  - id: restart
-    name: Restarting Challenges
-    allow_privileged: false
-  - id: sensai
-    name: Getting Help
-    allow_privileged: false
-  - id: challenge
-    name: Challenge Programs
-    allow_privileged: false
-  - id: flag
-    name: The Flag File
-    allow_privileged: false
-  - id: practice
-    name: Using Practice Mode
-  - id: persist-1
-    name: Persistent Home Directories - One
-  - id: persist-2
-    name: Persistent Home Directories - Two
 
 resources:
   - name: "What is pwn.college?"
@@ -56,9 +24,63 @@ resources:
   - name: "Getting Started"
     type: lecture
     video: DJO1A2neZ6Y
+  - type: header
+    content: Interacting with the Dojo
+  - id: terminal
+    type: challenge
+    name: Using the Terminal
+    allow_privileged: false
+  - id: vscode
+    type: challenge
+    name: Using the VSCode Workspace
+    allow_privileged: false
+  - id: desktop
+    type: challenge
+    name: Using the GUI Desktop
+    allow_privileged: false
+  - id: desktop-paste
+    type: challenge
+    name: Pasting into the Desktop
+    allow_privileged: false
+  - id: restart
+    type: challenge
+    name: Restarting Challenges
+    allow_privileged: false
+  - id: sensai
+    type: challenge
+    name: Getting Help
+    allow_privileged: false
+
+  - type: header
+    content: The Challenge Environment
+  - type: markdown
+    name: Required Knowledge
+    content: |
+      The challenges below assume that you are familiar with the basics of the Linux commandline.
+      If you are not, don't worry!
+      Simply do our [Linux Luminarium](/linux-luminarium) first, then come back and do these challenges!
+  - id: challenge
+    type: challenge
+    name: Challenge Programs
+    allow_privileged: false
+  - id: flag
+    type: challenge
+    name: The Flag File
+    allow_privileged: false
+  - id: practice
+    type: challenge
+    name: Using Practice Mode
+  - id: persist-1
+    type: challenge
+    name: Persistent Home Directories - One
+  - id: persist-2
+    type: challenge
+    name: Persistent Home Directories - Two
+
   - name: "Connecting over SSH"
     type: markdown
     content: |
+      Advanced users often prefer connecting over a remote shell.
       In order to ssh into your challenge instances, you must link a public ssh key to your account [through your settings](/settings#ssh-key).
       You can quickly generate an ssh key by running `ssh-keygen -f key -N ''` in a terminal on your (unix-friendly) host machine.
       This will generate files `key` and `key.pub`, which are your private and public keys respectively.
