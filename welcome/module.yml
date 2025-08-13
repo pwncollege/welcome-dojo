@@ -85,8 +85,3 @@ resources:
       You can quickly generate an ssh key by running `ssh-keygen -f key -N ''` in a terminal on your (unix-friendly) host machine.
       This will generate files `key` and `key.pub`, which are your private and public keys respectively.
       Once you have linked your *public* ssh key to your account, you can connect to the dojo over ssh with `ssh -i key hacker@pwn.college`.
-  - name: "The VM"
-    type: markdown
-    content: |
-      For some of the later (kernel-focused) challenges, you will need to solve the challenge in a virtual machine.
-      You can interact with the virtual machine using the `vm` command.
