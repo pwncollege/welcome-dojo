@@ -21,11 +21,11 @@ resources:
     type: lecture
     video: AO_twkCUTWc
     slides: 1mxKZE62tS4Sx7kfduon3vhh1VdTwgNQHeo0wSvpELtA
+  - type: header
+    content: Interacting with the Dojo
   - name: "Getting Started"
     type: lecture
     video: DJO1A2neZ6Y
-  - type: header
-    content: Interacting with the Dojo
   - id: terminal
     type: challenge
     name: Using the Terminal
