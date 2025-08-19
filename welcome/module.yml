@@ -55,7 +55,9 @@ resources:
     content: The Challenge Environment
   - type: markdown
     name: Required Knowledge
+    expandable: false
     content: |
+      **HACKER BEWARE!**
       The challenges below assume that you are familiar with the basics of the Linux commandline.
       If you are not, don't worry!
       Simply do our [Linux Luminarium](/linux-luminarium) first, then come back and do these challenges!
