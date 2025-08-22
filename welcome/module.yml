@@ -30,6 +30,8 @@ resources:
     type: challenge
     name: Using the Terminal
     allow_privileged: false
+    interfaces:
+      Terminal: 7681
   - id: vscode
     type: challenge
     name: Using the VSCode Workspace
