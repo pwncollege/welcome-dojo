@@ -31,8 +31,8 @@ resources:
     name: Using the Terminal
     allow_privileged: false
     interfaces:
-      name: Terminal
-      port: 7681
+      - name: Terminal
+        port: 7681
   - id: vscode
     type: challenge
     name: Using the VSCode Workspace
