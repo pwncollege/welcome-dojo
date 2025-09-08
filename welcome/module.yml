@@ -74,7 +74,7 @@ resources:
     allow_privileged: false
   - id: practice
     type: challenge
-    name: Using Practice Mode
+    name: Using Privileged Mode
   - id: persist-1
     type: challenge
     name: Persistent Home Directories - One
