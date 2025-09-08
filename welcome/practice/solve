@@ -23,18 +23,18 @@ END
 
 if [ "$(cat /run/dojo/sys/workspace/privileged)" -eq "1" ]; then
     cat <<END
-You are running in practice mode! The secret you need is in /challenge/secret.
+You are running in Privileged mode! The secret you need is in /challenge/secret.
 Use sudo to become root and read it out, then restart this challenge in non-
-Practice mode to get the flag!
+Privileged mode to get the flag!
 
-You'll notice that /flag has been replaced with a Practice-specific flag, so
-you can't just solve read out challenge flags in Practice mode.
+You'll notice that /flag has been replaced with a Privileged-mode specific flag, so
+you can't just solve read out challenge flags in Privileged mode.
 END
 else
     cat <<END
-You are not running in Practice mode! Hopefully, you have already run this
-challenge in Practice mode and used sudo to read /challenge/secret. If not,
-restart this challenge in Practice mode and do so, then come back to real
+You are not running in Privileged mode! Hopefully, you have already run this
+challenge in Privileged mode and used sudo to read /challenge/secret. If not,
+restart this challenge in Privileged mode and do so, then come back to real
 mode to try this again.
 
 END
