@@ -14,11 +14,11 @@ This dojo contains the first few challenges that you'll tackle, and they'll teac
 Because flags are countable, dojos and modules maintain a leaderboard of top hackers!
 Check it out down at the bottom of the page for this whole dojo.
 
-When you're ready to Enter the Dojo, click/tap on `Using the Dojo` below, in the module list!
+When you're ready to enter the Dojo, click/tap on `Using the Dojo` below, in the module list!
 
 The yang to the dojo's yin is our Discord server.
 Learn more and connect up by heading over to `Joining the Discord` in the module list below!
 
-Once you've learned to Use the Dojo and have Joined the Discord, you may move on to the [main material](/dojos).
+Once you've learned to use the Dojo and have joined the Discord, you may move on to the [main material](/dojos).
 
 Good luck on your cybersecurity journey!
