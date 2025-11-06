@@ -1,0 +1,71 @@
+#!/usr/bin/exec-suid --real -- /bin/bash -p
+
+# art from https://emojicombos.com/karate-ascii-art
+cat <<END | while read LINE; do echo "$LINE"; sleep 0.1; done
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣄⢀⣤⣶⣷⣦⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⠿⣿⡿⢋⠈⠛⠿⢿⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣤⠃⠀⠘⠀⠀⠘⡿⠀⠀⠀⠀⠀⠀⠀⣶⡿⢶⣦⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⣿⡿⠻⣄⡀⠀⠒⢤⣼⠃⠀⠀⠀⠀⠀⠀⠀⢹⡀⠀⣸⠁⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⣿⣿⢞⠽⠉⠉⣺⠏⣱⠤⢄⡀⠀⠀⠀⠀⠀⣠⡗⢀⠇⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢉⡿⠋⡇⡎⠀⣠⠞⣡⠞⠁⠀⠀⠈⠢⡀⠀⠀⣠⠋⢣⡸⢧⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡞⢠⠀⢃⢱⡔⢁⢼⡥⣤⣄⡀⠀⠀⠀⠸⠷⢻⠃⠀⠀⠳⡾⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠇⡇⠀⢸⠋⡰⠃⠸⠼⠿⠿⠉⠢⡀⠀⠀⠀⡆⠀⡆⠀⡼⠁⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡼⠠⣇⢠⠃⡞⠁⠀⠀⠀⠀⠀⠀⡰⠋⠓⠢⠤⢀⣠⠽⠊⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡁⢀⣬⣟⣸⠁⠀⠈⠉⠉⣁⠴⠊⡷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢳⣿⠩⠿⢿⠀⡄⠀⠀⠀⣀⡀⠀⢳⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⢺⣿⣶⣏⣿⠿⣿⣏⣻⣶⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠎⣽⠏⠀⠈⠙⢏⢳⡀⠀⠀⠙⠦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡠⠔⠛⢹⣿⠀⠀⠀⠀⠈⠻⣿⣶⠁⠀⠀⠈⠑⠢⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣀⠴⠊⠁⠀⠀⠀⢸⣿⠀⠣⡀⠀⠀⡴⠛⢮⢣⡀⠀⠀⠀⠀⠀⠈⠓⢤⡀⠀⠀⠀⠀⠀
+⠀⠀⠀⢀⠔⠋⠀⠀⠀⠀⠀⠀⠀⢸⡿⠀⠀⠘⣦⣈⡀⠀⠈⠛⠓⠀⠀⠀⠀⡠⠔⠐⡆⠱⡄⠀⠀⠀⠀
+⠀⠀⢠⠋⢦⡀⠀⠀⣀⠀⠀⠀⠀⠀⣀⡤⠒⠈⠁⠀⠀⠉⠁⠒⢤⡀⠀⠀⠀⠀⠀⠀⡇⠀⠘⢦⠀⠀⠀
+⠀⠀⡘⠀⠈⢻⡲⢄⠀⢉⡱⠖⠒⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠒⢤⣐⡄⢀⡇⠀⠀⠀⠳⡀⠀
+⠀⣠⠛⢦⡀⠀⠑⠀⡽⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣇⠘⠀⠀⠀⢀⣀⣽⡄
+⠀⢫⡀⠀⠙⠀⠀⠀⡇⠀⠀⠀⠀⠀⠀⠀WELCOME⠀⠀⠀⠀⠀⠀⠀⢸⠀⢀⡤⠚⠉⡟⠋⠀
+⠀⠀⠉⠒⠤⣤⠤⣼⠁⠀⠀⠀⠀⠀⠀⠀TO   ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⠋⢧⠀⠀⡇⠀⠀
+⠀⠀⠀⣀⠤⠃⠀⣼⠀⠀⠀⠀⠀⠀⠀⠀THE  ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⡇⠀⢣⠀⠀
+⠰⣿⣉⣀⠤⠤⠤⠽⠀⠀⠀⠀⠀⠀⠀⠀DOJO⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣏⢰⣀⣣⡀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠒⠛⠛⠋
+You should be running this challenge through SSH...
+Let's check!
+END
+
+echo -n "Checking"
+for i in {1..10}
+do
+	echo -n "."
+	sleep 0.1
+done
+echo -n $'\r'
+
+if [ "$UID" -ne 0 ]
+then
+	echo "You seem to be running this challenge using 'bash $0' or 'sh $0'."
+	echo "Please run the challenge directly (e.g., without 'bash' or 'sh', just './$0')."
+	exit 1
+fi
+
+pid=$$
+while [ $pid -ne 0 ]; do
+    cmdline=$(cat /proc/$pid/cmdline | tr '\0' ' ')
+    case "$cmdline" in
+        *"code-server"*) workspace="code"; break ;;
+        *"xfce4-terminal"*) workspace="desktop"; break ;;
+        *"ssh-entrypoint"*) workspace="ssh"; break ;;
+        *"ttyd"*) workspace="ttyd"; break ;;
+    esac
+    if [ -n "$workspace" ]; then
+        break
+    fi
+    pid=$(grep -oP 'PPid:\s*\K\d+' /proc/$pid/status)
+done
+
+if [ "$workspace" == "ssh" ]
+then
+	echo "PASSED! You are running in SSH!"
+	echo -n "Your flag: "
+	cat /flag
+else
+	echo "NOPE! Please run this challenge via SSH (rather than VSCode, Desktop, or Terminal)!"
+fi
