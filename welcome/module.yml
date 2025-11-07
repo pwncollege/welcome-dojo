@@ -49,6 +49,7 @@ resources:
     type: challenge
     name: Connecting over SSH
     allow_privileged: false
+    required: false
   - id: restart
     type: challenge
     name: Restarting Challenges
@@ -57,6 +58,7 @@ resources:
     type: challenge
     name: Getting Help
     allow_privileged: false
+    required: false
 
   - type: header
     content: The Challenge Environment
