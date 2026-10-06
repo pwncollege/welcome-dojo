@@ -61,15 +61,15 @@ then
 	cat /flag
 	cat <<END
 
-Now, copy your flag out of the Desktop! This takes some work. The steps:
+Now, copy your flag out of the Desktop! The Desktop shares its text clipboard
+with your system clipboard.
 
 1. Select the flag with your mouse.
-2. Right click, Copy the flag.
-3. The flag is now in the dojo's clipboard, but not your system's clipboard!
-4. Click on the ▸ button on the left edge of the Desktop.
-5. Click on the Clipboard button. The Dojo's clipboard will appear!
-6. You can now copy these contents to get them into your system's clipboard!
-7. After copying the contents, paste them into the flag submission box!
+2. Right-click and select Copy.
+3. Return to the challenge page and paste the flag into the submission box!
+
+If the flag doesn't reach your system clipboard, copy it again and click
+once inside the Desktop before switching tabs.
 END
 else
 	echo "NOPE! Run this challenge from the Desktop (rather than the Terminal or VSCode)!"
