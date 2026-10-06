@@ -49,19 +49,15 @@ then
 	cat <<END
 You are running in the Desktop!
 
-Let's learn to paste from outside of the Desktop. Like copying, pasting is a
-bit involved... After copying something on your system outside of the dojo
-(for example, from another browser tab):
+Let's learn to paste from outside of the Desktop! You can paste directly
+from your system clipboard using a keyboard shortcut:
 
-1. Click on the ▸ button on the left edge of the Desktop.
-2. Click on the Clipboard button. The Dojo's clipboard will appear!
-3. Overwrite the contents of the dojo's clipboard with the contents of your
-   system's clipboard (for example, Ctrl-A followed by Ctrl-V).
-4. Now the contents are in the dojo's clipboard!
-5. Paste the contents into the terminal (Right Click->Paste).
+1. Copy the secret token from the challenge description.
+2. Click inside this terminal.
+3. Press Ctrl+Shift+V (Cmd+Shift+V on macOS) to paste the token.
+4. Press Enter to submit it!
 
-Now, go copy the secret token from the challenge description, then paste it
-into this terminal using the steps above!
+This is the paste shortcut for the Linux terminal inside the Desktop.
 END
 
 	read TOKEN
